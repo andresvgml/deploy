@@ -29,6 +29,8 @@ jobs:
       run: chmod -R 777 storage bootstrap/cache
     - name: Create DB
       run: php artisan migrate:createdb
+    - name: Migrate
+      run: php artisan migrate --force
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@v2.1.1
       env:
