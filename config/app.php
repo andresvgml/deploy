@@ -234,4 +234,5 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
+    'force_https' => env('FORCE_HTTPS'),
 ];
