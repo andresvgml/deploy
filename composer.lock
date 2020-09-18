@@ -909,16 +909,16 @@
         },
         {
             "name": "laravel/telescope",
-            "version": "v3.5.1",
+            "version": "v3.5.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/telescope.git",
-                "reference": "a8d2e1106ba655006fde47a0b7ed53851c6398f5"
+                "url": "https://github.com/andresvgml/telescope.git",
+                "reference": "b7e62ae53cb6a36eda27add6a90576f27cc22547"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/telescope/zipball/a8d2e1106ba655006fde47a0b7ed53851c6398f5",
-                "reference": "a8d2e1106ba655006fde47a0b7ed53851c6398f5",
+                "url": "https://api.github.com/repos/andresvgml/telescope/zipball/b7e62ae53cb6a36eda27add6a90576f27cc22547",
+                "reference": "b7e62ae53cb6a36eda27add6a90576f27cc22547",
                 "shasum": ""
             },
             "require": {
@@ -948,7 +948,11 @@
                     "Laravel\\Telescope\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Laravel\\Telescope\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -968,7 +972,10 @@
                 "laravel",
                 "monitoring"
             ],
-            "time": "2020-07-28T19:12:33+00:00"
+            "support": {
+                "source": "https://github.com/andresvgml/telescope/tree/v3.5.9"
+            },
+            "time": "2020-09-18T20:11:08+00:00"
         },
         {
             "name": "laravel/tinker",
