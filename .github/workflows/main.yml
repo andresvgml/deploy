@@ -13,6 +13,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Install npm dependencies
+      run: npm install
+    - name: Run build task
+      run: npm run prod
     - name: Set .env
       run: echo -n -e "${{ secrets.ENVIROMENT_FILE }}" > .env
     - name: Install Dependencies
